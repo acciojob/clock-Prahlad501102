@@ -1,1 +1,27 @@
 /*  your css code here. If applicable */
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#clock-display {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: 2px solid #5a5a5a;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #007bff;
+}
