@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Clock Timer</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Date Timer</title>
 </head>
 <body>
-    <h1>Live Clock Timer</h1>
-    <div id="clock-display">Loading...</div>
 
-    <script src="script.js"></script>
+    <p id="timer"></p>
+
+    <script>
+        function updateTimer() {
+            const now = new Date();
+            document.getElementById("timer").innerText =
+                now.toLocaleString();
+        }
+
+        updateTimer();                 // initial call
+        setInterval(updateTimer, 1000); // update every second
+    </script>
+
 </body>
 </html>
